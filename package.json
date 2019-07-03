@@ -3,7 +3,9 @@
   "version": "2.1.1",
   "description": "egg-born-backend",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -45,7 +47,9 @@
     "uuid": "^3.2.1",
     "object-get-o-a": "^1.0.2",
     "supertest": "^4.0.2",
-    "semver": "^6.1.1"
+    "semver": "^6.1.1",
+    "snyk": "^1.189.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "snyk": true
 }
